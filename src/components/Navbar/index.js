@@ -7,23 +7,37 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks
+  NavLinks,
+  NavBtn,
+  NavBtnLink
 } from './NavbarElements'
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <NavLogo to='/'>APlus</NavLogo> 
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
               <NavLinks to='about'>Nosotros</NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks to='courses'>Cursos</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to='opinions'>Opiniones</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to='contact'>Contacto</NavLinks>
+            </NavItem>
           </NavMenu>
+          <NavBtn>
+            <NavBtnLink to='/signin'>Iniciar Sesión</NavBtnLink>
+          </NavBtn>
         </NavbarContainer>
       </Nav>
     </>
