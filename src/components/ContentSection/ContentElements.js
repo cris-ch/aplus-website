@@ -1,27 +1,27 @@
 import styled from 'styled-components';
 
-export const AboutContainer = styled.div`
+export const ContentContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#EB0A00')};
+  background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#109E96')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
 `;
 
-export const AboutWrapper = styled.div`
+export const ContentWrapper = styled.div`
   display: grid;
   z-index: 1;
   height: 860px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
 `;
 
-export const AboutRow = styled.div`
+export const ContentRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -51,7 +51,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #309E10;
+  color: #0CEBDF;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

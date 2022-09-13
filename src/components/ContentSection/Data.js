@@ -1,0 +1,51 @@
+export const homeObjOne = {
+  id: "about",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  topLine: "Experiencia Profesional",
+  headline: "Quienes Somos",
+  description: "Somos una academia de inglés con más de 20 años de experiencia. Nuestro método de enseñanza garantiza resultados. ¡Aprende inglés con nosotros!",
+  buttonLabel: "Contacta con nosotros",
+  imgStart: false,
+  img: require("../../images/svg-1.svg").default,
+  alt: "Books",
+  dark: true,
+  primary: true,
+  darkText: true,
+};
+
+export const homeObjTwo = {
+  id: "about",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "Ubicación",
+  headline: "Mont-Roig del Camp",
+  description: "Nos encontramos en Mont-Roig del Camp, en la provincia de Tarragona. Nuestra academia está situada frente al colegio. ¡Ven a visitarnos!",
+  buttonLabel: "Contacta con nosotros",
+  imgStart: true,
+  img: require("../../images/svg-2.svg").default,
+  alt: "Books",
+  dark: true,
+  primary: true,
+  darkText: false,
+};
+
+export const homeObjThree = {
+  id: "about",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  topLine: "Academia de Inglés",
+  headline: "Aprende Inglés con nosotros",
+  description: "Somos una academia de inglés con más de 20 años de experiencia. Nuestro método de enseñanza es único y garantiza resultados. ¡Aprende inglés con nosotros!",
+  buttonLabel: "Contacta con nosotros",
+  imgStart: false,
+  img: require("../../images/svg-3.svg").default,
+  alt: "Books",
+  dark: true,
+  primary: true,
+  darkText: true,
+};
+

@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "../ButtonElement";
 import {
-  AboutContainer,
-  AboutWrapper,
-  AboutRow,
+  ContentContainer,
+  ContentWrapper,
+  ContentRow,
   Column1,
   Column2,
   TextWrapper,
@@ -13,9 +13,9 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
-} from "./AboutElements";
+} from "./ContentElements";
 
-const AboutUsSection = ({
+const ContentSection = ({
   lightBg,
   id,
   imgStart,
@@ -33,9 +33,9 @@ const AboutUsSection = ({
 }) => {
   return (
     <>
-      <AboutContainer lightBg={lightBg} id={id} >
-        <AboutWrapper>
-          <AboutRow imgStart={imgStart}>
+      <ContentContainer lightBg={lightBg} id={id} >
+        <ContentWrapper>
+          <ContentRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
@@ -63,11 +63,11 @@ const AboutUsSection = ({
                 <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
-          </AboutRow>
-        </AboutWrapper>
-      </AboutContainer>
+          </ContentRow>
+        </ContentWrapper>
+      </ContentContainer>
     </>
   );
 };
 
-export default AboutUsSection;
+export default ContentSection;
