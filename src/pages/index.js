@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import ContentSection from '../components/ContentSection'
 import { homeObjOne, homeObjTwo, homeObjThree} from '../components/ContentSection/Data'
+import Courses from '../components/CoursesSection.js'
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection />
+      <Courses />
       <ContentSection {...homeObjOne} />
       <ContentSection {...homeObjTwo} />
       <ContentSection {...homeObjThree} />
